@@ -76,6 +76,10 @@ A Logistic Regression model was implemented to estimate the probability of borro
 
 ![Feature Importance](images/feature_importance.png)
 
+Logistic regression coefficients were analyzed to determine the most influential predictors of loan default. Loans with higher interest rates are much more likely to default. This makes sense because lenders often charge higher interest to riskier borrowers. Also, borrowers with higher debt relative to their income have a higher probability of default. This is one of the most important indicators used in lending decisions. However, the size of the loan alone does not strongly determine default risk in this dataset.
+Thus, Interest rates emerged as the strongest predictor, followed by the borrower's debt-to-income ratio. Annual income showed a small negative relationship with default probability, indicating that higher-income borrowers are slightly less likely to default.
+
+# ML Model
 Train-Test Split- The dataset was divided using: train_test_split(X, y, test_size=0.3, random_state=42)
 This created 70% training data → used to train the model, 30% testing data → used to evaluate performance
 This approach ensures the model is tested on unseen data.
