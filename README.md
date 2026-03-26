@@ -34,7 +34,7 @@ These steps ensure the dataset is consistent for statistical analysis and machin
 ## Exploratory Analysis & Visualizations
 # Default Rate by Credit Grade
 This bar chart shows the average default rate across borrower credit grades.
-![Default Rate](images/loan default rate by credit grade.png)
+![Default Rate](images/LOAN DEFAULT RATE BY CREDIT GRADE.png)
 Statistically, the bar height represents the mean of the binary default variable within each grade category.
 Interpretation:
 Lower credit grades exhibit significantly higher default rates.
