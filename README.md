@@ -35,7 +35,7 @@ These steps ensure the dataset is consistent for statistical analysis and machin
 # Default Rate by Credit Grade
 This bar chart shows the average default rate across borrower credit grades.
 
-![Default Rate](images/LOAN DEFAULT RATE BY CREDIT GRADE.png)
+![Default Rate](images/default_rate_credit_grade.png)
 
 Statistically, the bar height represents the mean of the binary default variable within each grade category.
 Interpretation:
@@ -46,7 +46,7 @@ This confirms that credit scoring is strongly associated with loan risk.
 # Interest Rate Distribution by Default Status
 A boxplot compares interest rate distributions between performing and defaulted loans.
 
-![Interest Rate](images/INTEREST RATE DISTRIBUTION BY LOAN DEFAULT.png)
+![Interest Rate](images/interest_rate_default.png)
 
 Statistical interpretation- The box represents the interquartile range (25th–75th percentile. The horizontal line inside the box represents the median interest rate. Points outside the whiskers represent extreme values
 Financial insight- Loans that default tend to have higher interest rate distributions, reflecting lenders’ risk-based pricing strategies. Higher borrowing costs may also contribute to repayment difficulty.
@@ -54,7 +54,7 @@ Financial insight- Loans that default tend to have higher interest rate distribu
 # Debt-to-Income Ratio vs Loan Amount
 This scatter plot visualizes the relationship between borrower leverage and loan size. Each point represents a borrower, with color indicating default status.
 
-![DTI](images/DTI RATIO VS LOAN AMOUNT.png)
+![DTI](images/dti_vs_loan_amount.png)
 
 Observation:
 Borrowers with higher debt-to-income ratios show greater clustering of default outcomes. DTI is therefore a key indicator of repayment capacity.
@@ -62,19 +62,19 @@ Borrowers with higher debt-to-income ratios show greater clustering of default o
 # Loan Issuance Over Time
 A time series visualization tracks the total loan amounts issued per year. This reveals lending activity trends and how the volume of credit extended changes over time.
 
-![Loan Trend](images/TOTAL LOAN ISSUANCE OVER TIME.png)
+![Loan Trend](images/loan_issuance_time.png)
 
 # Correlation Analysis
 A correlation matrix was computed using: Loan Amount, Annual Income, Debt-to-Income Ratio, Interest Rate, Default. 
 
-![Correlation](images/correlation heatmap of loan risk.png)
+![Correlation](images/correlation_heatmap.png)
 
 Key findings show that Interest Rate shows positive correlation with default risk. Debt-to-Income ratio also exhibits a positive relationship with default. Income displays a weaker negative relationship, indicating higher-income borrowers are somewhat less likely to default.
 
 # Predictive Model
 A Logistic Regression model was implemented to estimate the probability of borrower default. Features includes Loan Amount, Annual Income, Debt-to-Income Ratio, Interest Rate Target variable: Default (0 or 1)
 
-![Feature Importance](images/Feature importance of loan.png)
+![Feature Importance](images/feature_importance.png)
 
 Train-Test Split- The dataset was divided using: train_test_split(X, y, test_size=0.3, random_state=42)
 This created 70% training data → used to train the model, 30% testing data → used to evaluate performance
